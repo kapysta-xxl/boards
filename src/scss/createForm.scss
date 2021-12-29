@@ -1,0 +1,15 @@
+.createForm{
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+
+    &__options{
+        display: flex;
+    }
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+    margin-bottom: 8px;
+}

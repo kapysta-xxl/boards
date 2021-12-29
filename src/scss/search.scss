@@ -1,0 +1,47 @@
+.search-form{
+    margin-bottom: 20px;
+    display: flex;
+
+    label{
+        width: 256px;
+        height: 32px;
+        margin-right: 8px;
+        padding: 4px 12px 4px 34px;
+        border-radius: 6px;
+        outline: none;
+        border: 1px solid #DDE2E4;
+        position: relative;
+        
+        &:after{
+            display: block;
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: url('../images/search.svg') 50% 50% no-repeat;
+            position: absolute;
+            left: 8px;
+            top: 8px;
+        }
+    }
+
+    input{
+        width: 100%;
+        height: 100%;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        color: #9AA6AC;
+    }
+
+    button{
+        outline: none;
+        border: none;
+        border-radius: 6px;
+        background: #4094F7;
+        color: #fff;
+        line-height: 24px;
+        padding: 4px 12px;
+        cursor: pointer;
+    }
+}

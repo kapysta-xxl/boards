@@ -1,0 +1,33 @@
+.breadcrumbs{
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+    margin-bottom: 20px;
+
+    &__link{
+        text-decoration: none;
+        font-size: 12px;
+        color: #6E7C87;
+    }
+    &__link:last-of-type,
+    &__link:last-child{
+        color: #252C32;
+    }
+
+    &__link + &__link{
+        margin-left: 30px;
+        position: relative;
+        
+        &:after{
+            display: block;
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: url('../images/bred-arrow.svg') 50% 50% no-repeat;
+            position: absolute;
+            position: absolute;
+            left: -18px;
+            top: 3px;
+        }
+    }
+}

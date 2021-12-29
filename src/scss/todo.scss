@@ -1,0 +1,122 @@
+.todo-wrapper{
+    width: 100%;
+    background: none;
+}
+.todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 8px;
+    border: 1px solid transparent;
+
+    a{
+        color: #252C32;
+        background: none;
+        text-decoration: none;
+        margin-bottom: 12px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    a:link,
+    a:active,
+    a:visited{
+        color: #252C32;
+    }
+    &__footer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    &__title{
+        margin-left: auto;
+        color: #6E7C87;
+        font-size: 14px;
+        letter-spacing: .06rem;
+    }
+    &__priority-number{
+        background: #E5E9EB;
+        border-radius: 12px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 8px;
+
+        span{
+            font-size: 14px;
+            margin-bottom: 1px;
+        }
+    }
+
+    &__priority-icon{
+        width: 24px;
+        height: 24px;
+        
+        &-critical{
+            background: url('../images/critical.svg') 50% 50% no-repeat;
+        }
+
+        &-major{
+            background: url('../images/major.svg') 50% 50% no-repeat;
+        }
+
+        &-normal{
+            background: url('../images/normal.svg') 50% 50% no-repeat;
+        }
+
+        &-minor{
+            background: url('../images/minor.svg') 50% 50% no-repeat;
+        }
+
+        &-none{
+            background: url('../images/none.svg') 50% 50% no-repeat;
+        }
+    }
+}
+
+.dragging > div{
+    border: 1px solid chartreuse;
+}
+
+.todo-info{
+    display: inline-flex;
+    flex-direction: column;
+
+    &__footer{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    &__descr{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    &__status{
+        font-size: 16px;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    &__edit-btn{
+        align-self: flex-start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 12px;
+        outline: none;
+        border: none;
+        background: #F2994A;
+        border-radius: 6px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
