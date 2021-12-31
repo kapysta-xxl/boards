@@ -22,13 +22,13 @@
     },
     {
       "id": "6224",
-      "title": "222222",
-      "descr": "As a translator, I want integrate Crowdin webhook to notify translators about changed strings",
       "priority": {
-        "status": "major",
-        "points": 1
+        "status": "critical",
+        "points": "10"
       },
-      "status": "to do"
+      "title": "MB-333",
+      "status": "to do",
+      "descr": "gregerge"
     },
     {
       "id": "6216",
