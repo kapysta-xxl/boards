@@ -23,12 +23,12 @@ function TodoPage() {
     }
 
     const save = (data) => {
-    
-        let title = data.title;
+        console.log(data)
+        let title = data.title || todo.title;
         let status = data.status === "" ? todo.status : data.status;
         let priority = data.priority === "" ? todo.priority.status : data.priority;
         let descr = data.description === "" ? todo.descr : data.description;
-        let points = data.number === "" ? todo.priority.points : data.number;
+        let points = !Number.isInteger(data.points) ? todo.priority.points : data.points;
 
         const newTodo = {
             id: todo.id,

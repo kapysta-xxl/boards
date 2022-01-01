@@ -8,17 +8,17 @@
         "status": "critical",
         "points": 2
       },
-      "status": "test"
+      "status": "in progress"
     },
     {
       "id": "8027",
-      "title": "FC-13",
-      "descr": "As a translator, I want integrate Crowdin webhook to notify translators about changed strings",
       "priority": {
-        "status": "minor",
+        "status": "normal",
         "points": 2
       },
-      "status": "in progress"
+      "title": "11111",
+      "status": "test",
+      "descr": "As a translator, I want integrate Crowdin webhook to notify translators about changed strings"
     },
     {
       "id": "6224",
@@ -32,13 +32,13 @@
     },
     {
       "id": "6216",
-      "title": "FC-16",
-      "descr": "As a translator, I want integrate Crowdin webhook to notify translators about changed strings",
       "priority": {
-        "status": "critical",
+        "status": "minor",
         "points": 1
       },
-      "status": "done"
+      "title": "TITLE",
+      "status": "to do",
+      "descr": "DESCRIPTION"
     }
   ]
 }

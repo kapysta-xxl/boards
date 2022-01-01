@@ -1,15 +1,15 @@
 import React from 'react';
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import './form.scss';
+import Select from 'react-select';
 
 function Form ({ submitHandler }) {
     const {  
         register, 
-        formState: {
-            errors
-        },
+        formState: { errors },
         handleSubmit,
-        reset
+        reset,
+        control
     } = useForm();
 
 
@@ -51,6 +51,41 @@ function Form ({ submitHandler }) {
         }
     ]
     
+    const customStyles = {
+        option: (styles, { isFocused, isSelected }) => {
+            return {
+                ...styles,
+                background: isSelected ? '#ffe6e6' : 'none',
+                color: '#9AA6AC',
+                cursor: 'pointer'
+            }
+        },
+        control: styles => ({ 
+            width: 100 + '%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            paddingRight: '10px',
+            paddingLeft: '10px'
+         }),
+         indicatorSeparator: styles => ({ display: 'none' }),
+         dropdownIndicator: styles => ({ 
+            display: 'flex',
+            alignItems: 'center',
+            width: '10px',
+            height: '10px',
+            background: "url('../images/select-arrow.svg') 50% 50% no-repeat",
+          }),
+          singleValue: styles => ({
+              ...styles,
+              color: '#9AA6AC'
+           }),
+           placeholder: styles => ({
+            ...styles,
+            color: '#9AA6AC'
+         }),
+      }
+
     const submit = (data) => {
         submitHandler(data)
         reset()
@@ -59,7 +94,7 @@ function Form ({ submitHandler }) {
     return (
         <form className='form' onSubmit={handleSubmit(submit)}>
         <input 
-        className='form' 
+        className='form__title' 
         type="text" 
         placeholder="Title *"
         {...register("title", {
@@ -71,41 +106,56 @@ function Form ({ submitHandler }) {
             { errors.title && errors.title.message}
         </span>
         <div className='form__options'>
-            <select 
-            className='form__priority'
-            {...register("priority")}
-            >
-                <option value="">Priority</option>
-                { priority.map(option => 
-                    <option key={ option.value } value={ option.value }>{ option.label }</option>
+        <Controller
+                control={control}
+                defaultValue=""
+                name="priority"
+                render={({field: { onChange, value, ref }}) => (
+                    <Select
+                        styles={customStyles}
+                        inputRef={ref}
+                        options={priority}
+                        value={priority.find(n => n.value === value) || ""}
+                        onChange={val => onChange(val.value)}
+                        placeholder="Priority"
+                        isSearchable={false}
+                    />
                 )}
-            </select> 
+            />
             <input 
-            type="number"
             className='form__points'
-            {...register("number", {
-                maxLength: 2,
+            placeholder='Points'
+            {...register("points", {
+                valueAsNumber: true,
                 min: 1,
                 max: 10,
             })}
             />
-            <select 
-            className='form__status'
-            {...register("status")}
-            >
-                <option value="">Status</option>
-                { statuses.map(option => 
-                    <option key={ option.value } value={ option.value }>{ option.label }</option>
+            <Controller
+                control={control}
+                defaultValue=""
+                name="status"
+                render={({field: { onChange, value, ref }}) => (
+                    <Select
+                        styles={customStyles}
+                        inputRef={ref}
+                        options={statuses}
+                        value={statuses.find(n => n.value === value) || ""}
+                        onChange={val => onChange(val.value)}
+                        placeholder="Status"
+                        isSearchable={false}
+                    />
                 )}
-            </select> 
+            />
         </div>
         <textarea 
         className='form__decsr'
+        spellCheck="false"
         {...register("description", {
             maxLength: 300
         })}
         />
-        <button className='form__button' type='submit'>Create</button>
+        <button className='form__button' type='submit'>Save</button>
     </form>
     );
 }

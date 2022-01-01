@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { TODO_ROUTE } from '../utils/constants';
 import '../scss/todo.scss';
