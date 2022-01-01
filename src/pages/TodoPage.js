@@ -23,7 +23,6 @@ function TodoPage() {
     }
 
     const save = (data) => {
-        console.log(data)
         let title = data.title || todo.title;
         let status = data.status === "" ? todo.status : data.status;
         let priority = data.priority === "" ? todo.priority.status : data.priority;

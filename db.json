@@ -26,7 +26,7 @@
         "status": "critical",
         "points": "10"
       },
-      "title": "MB-333",
+      "title": "g34",
       "status": "to do",
       "descr": "gregerge"
     },
@@ -39,6 +39,16 @@
       "title": "TITLE",
       "status": "to do",
       "descr": "DESCRIPTION"
+    },
+    {
+      "id": "6924",
+      "priority": {
+        "status": "minor",
+        "points": 1
+      },
+      "title": "htrhh",
+      "status": "done",
+      "descr": ""
     }
   ]
 }
