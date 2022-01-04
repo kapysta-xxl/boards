@@ -2,33 +2,33 @@
   "todos": [
     {
       "id": "7593",
-      "title": "FC-13",
-      "descr": "As a translator, I want integrate Crowdin webhook to notify translators about changed strings",
       "priority": {
         "status": "critical",
         "points": 2
       },
-      "status": "in progress"
+      "title": "jtyjtyjty",
+      "status": "in progress",
+      "descr": "jtytjtyjt"
     },
     {
       "id": "8027",
       "priority": {
-        "status": "normal",
-        "points": 2
+        "status": "minor",
+        "points": 6
       },
-      "title": "11111",
+      "title": "htr",
       "status": "test",
-      "descr": "As a translator, I want integrate Crowdin webhook to notify translators about changed strings"
+      "descr": "hthr"
     },
     {
       "id": "6224",
       "priority": {
         "status": "critical",
-        "points": "10"
+        "points": 9
       },
-      "title": "g34",
-      "status": "to do",
-      "descr": "gregerge"
+      "title": "GC-13",
+      "status": "done",
+      "descr": "Some description for todo."
     },
     {
       "id": "6216",
@@ -41,14 +41,14 @@
       "descr": "DESCRIPTION"
     },
     {
-      "id": "6924",
+      "id": "41933",
       "priority": {
         "status": "minor",
-        "points": 1
+        "points": 5
       },
-      "title": "htrhh",
-      "status": "done",
-      "descr": ""
+      "title": "htrr",
+      "status": "test",
+      "descr": "hrhr"
     }
   ]
 }

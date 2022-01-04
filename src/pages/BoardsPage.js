@@ -77,7 +77,7 @@ function BoardsPage() {
         <div className='boards'>
             <div className='boards__title'>
                 <h1>issue Boards</h1>
-                <Link to="/create">New issue</Link>
+                <Link to="/boards/create">New issue</Link>
             </div>
             <Search compare={compare}/>
             <div className='flexbox-grid'>

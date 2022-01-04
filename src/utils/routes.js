@@ -1,25 +1,28 @@
-import { BOARDS_ROUTE, TODO_ROUTE, CREATE_ROUTE, PAGE_404 } from './constants';
+import { BOARDS_ROUTE, TODO_ROUTE, CREATE_ROUTE } from './constants';
 
 import BoardsPage from '../pages/BoardsPage';
 import CreatePage from '../pages/CreatePage';
 import TodoPage from '../pages/TodoPage';
-import Page404 from '../pages/Page404';
 
 export const routes = [
     {
         path: BOARDS_ROUTE,
-        Component: BoardsPage
+        Component: BoardsPage,
+        title: 'issue Boards'
     },
     {
         path: TODO_ROUTE + "/:id",
-        Component: TodoPage
+        Component: TodoPage,
+        title: 'issue'
     },
     {
         path: CREATE_ROUTE,
-        Component: CreatePage
+        Component: CreatePage,
+        title: 'Create'
     },
     {
-        path: PAGE_404,
-        Component: Page404
+        path: '*',
+        Component: BoardsPage,
+        title: 'issue Boards'
     }
 ]

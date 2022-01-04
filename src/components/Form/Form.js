@@ -66,7 +66,8 @@ function Form ({ submitHandler }) {
             alignItems: 'center',
             justifyContent: 'space-between',
             paddingRight: '10px',
-            paddingLeft: '10px'
+            paddingLeft: '10px',
+            cursor: 'pointer'
          }),
          indicatorSeparator: styles => ({ display: 'none' }),
          dropdownIndicator: styles => ({ 
@@ -152,6 +153,7 @@ function Form ({ submitHandler }) {
         className='form__decsr'
         spellCheck="false"
         {...register("description", {
+            required: true,
             maxLength: 300
         })}
         />
