@@ -6,7 +6,7 @@ function ContainerPage({ children }) {
     <div className="container">
       <BreadCrumbs />
       {children}
-    </div>
+    </div> 
   );
 }
 

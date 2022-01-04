@@ -46,7 +46,7 @@ function TodoPage() {
       .put('/todos/' + todo.id, newTodo)
       .then((res) => console.log(res))
       .catch((e) => console.log(e));
-  };
+  }; 
 
   return (
     <>

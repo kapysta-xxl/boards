@@ -10,8 +10,7 @@ function Todo({ todo }) {
       <div className="todo__footer">
         <span className={`todo__priority-icon todo__priority-icon-${todo.priority.status}`}></span>
         <span className="todo__priority-number">
-          {' '}
-          <span>{todo.priority.points}</span>{' '}
+          <span>{todo.priority.points}</span> 
         </span>
         <span className="todo__title">{todo.title}</span>
       </div>
