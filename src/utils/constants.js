@@ -1,3 +1,3 @@
-export const BOARDS_ROUTE = '/boards'
-export const TODO_ROUTE = '/boards/todo'
-export const CREATE_ROUTE = '/boards/create'
+export const BOARDS_ROUTE = '/'
+export const TODO_ROUTE = '/todo'
+export const CREATE_ROUTE = '/create'

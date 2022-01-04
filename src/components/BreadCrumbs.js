@@ -16,14 +16,16 @@ function BreadCrumbs() {
         
         if(!route) return;
         
-        let pathNames = route.path.split('/').slice(1).filter(n => n !== ':id');
-
+        let pathNames = pathname === '/' ?
+        route.path.split('/').filter(n => n !== ':id').slice(1) :
+        route.path.split('/').filter(n => n !== ':id');
+        
         let newCrumbs = [];
         for(let i = 0, linkRoutes = routes; i < pathNames.length; i++){
             let item = linkRoutes.find(n => n.path.split('/').includes(pathNames[i]))
             if(item) newCrumbs.push(item);
         }
-
+        
         setCrumbs(newCrumbs)
     }, [pathname, params])
 

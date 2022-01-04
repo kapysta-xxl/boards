@@ -19,10 +19,5 @@ export const routes = [
         path: CREATE_ROUTE,
         Component: CreatePage,
         title: 'Create'
-    },
-    {
-        path: '*',
-        Component: BoardsPage,
-        title: 'issue Boards'
     }
 ]
