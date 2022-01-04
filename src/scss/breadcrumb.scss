@@ -1,20 +1,20 @@
-.breadcrumbs{
-    display: flex;
-    align-items: center;
-    padding-top: 14px;
-    margin-bottom: 20px !important;
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding-top: 14px;
+  margin-bottom: 20px !important;
 
-    &__link{
-        text-decoration: none;
-        font-size: 14px;
-        color: #6E7C87;
+  &__link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #6e7c87;
+  }
+
+  li:last-child,
+  li:last-of-type {
+    a {
+      color: #252c32;
+      cursor: default;
     }
-    
-    li:last-child,
-    li:last-of-type{
-        a{
-            color: #252C32;
-            cursor: default;
-        }
-    }
+  }
 }

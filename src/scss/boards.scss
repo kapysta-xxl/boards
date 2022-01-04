@@ -1,57 +1,57 @@
-.boards{
-    width: 100%;
-    background: none;
+.boards {
+  width: 100%;
+  background: none;
 
-    &__title{
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-        
-        h1{
-            margin-right: 27px;
-            line-height: 32px;
-        }
-
-        a{
-            background: #F2994A;
-            border-radius: 6px;
-            padding: 4px 12px;
-            text-decoration: none;
-            color: #fff;
-            text-align: center;
-            font-size: 14px;
-            letter-spacing: .06rem;
-            line-height: 24px;
-        }
-        align-self: start;:link,
-        a:visited,
-        a:active{
-            color: #fff;
-        }
-    }
-}
-.boards-column{
-    width: 100%;
-    background: #F6F8F9;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-
-    &__title{
-        padding: 12px 16px;
-        font-size: 14px;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: #6E7C87;
-    }
-}
-.todo-list{
-    height: 100%;
-    padding: 0 8px;
-    list-style: none;
-    background: none;
+  &__title {
     display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: flex-start;
-}
+    align-items: center;
+    margin-bottom: 30px;
 
+    h1 {
+      margin-right: 27px;
+      line-height: 32px;
+    }
+
+    a {
+      background: #f2994a;
+      border-radius: 6px;
+      padding: 4px 12px;
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 0.06rem;
+      line-height: 24px;
+    }
+    align-self: start;
+    :link,
+    a:visited,
+    a:active {
+      color: #fff;
+    }
+  }
+}
+.boards-column {
+  width: 100%;
+  background: #f6f8f9;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+
+  &__title {
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #6e7c87;
+  } 
+}
+.todo-list {
+  height: 100%;
+  padding: 0 8px;
+  list-style: none;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: flex-start;
+}

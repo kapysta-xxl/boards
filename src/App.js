@@ -5,13 +5,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { routes } from './utils/routes';
 
 function App() {
-
   return (
     <BrowserRouter>
       <div className="App">
         <Routes>
-          { routes.map(({ path, Component }) => {
-            return <Route key={path} path={path} element={<ContainerPage children={ <Component /> } />} />}) }
+          {routes.map(({ path, Component }) => {
+            return <Route key={path} path={path} element={<ContainerPage children={<Component />} />} />;
+          })}
         </Routes>
       </div>
     </BrowserRouter>

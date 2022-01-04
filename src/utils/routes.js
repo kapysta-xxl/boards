@@ -5,24 +5,24 @@ import CreatePage from '../pages/CreatePage';
 import TodoPage from '../pages/TodoPage';
 
 export const routes = [
-    {
-        path: BOARDS_ROUTE,
-        Component: BoardsPage,
-        title: 'issue Boards'
-    },
-    {
-        path: TODO_ROUTE + "/:id",
-        Component: TodoPage,
-        title: 'issue'
-    },
-    {
-        path: CREATE_ROUTE,
-        Component: CreatePage,
-        title: 'Create'
-    },
-    {
-        path: '*',
-        Component: BoardsPage,
-        title: 'issue Boards'
-    }
-]
+  {
+    path: BOARDS_ROUTE,
+    Component: BoardsPage,
+    title: 'issue Boards',
+  },
+  {
+    path: TODO_ROUTE + '/:id',
+    Component: TodoPage,
+    title: 'issue',
+  },
+  {
+    path: CREATE_ROUTE,
+    Component: CreatePage,
+    title: 'Create',
+  },
+  {
+    path: '*',
+    Component: BoardsPage,
+    title: 'issue Boards',
+  },
+];
